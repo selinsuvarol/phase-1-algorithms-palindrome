@@ -1,13 +1,18 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  if(word.split("").reverse().join("") === word) {
+    return true;
+  }else return false;
 }
 
 /* 
-  Add your pseudocode here
+  reversed string = split words, reverse words, join words;
+  if the reversed word is the same as the original word, then it is a palindrome
+  if the reversed word is not the same as the original word, then it is not a palindrome
 */
 
 /*
-  Add written explanation of your solution here
+  if the splitted, reversed and rejoined word is the same as the original word, then it is a palindrome
+  so that it returns true, otherwise it returns false.
 */
 
 // You can run `node index.js` to view these console logs
